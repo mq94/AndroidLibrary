@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">RFQ PSA P6x</string>
+    <string name="unknown_device">Unknown Device</string>
+
+    <string name="location_permission_title">LOCATION PERMISSION REQUIRED</string>
+    <string name="location_permission_info">The application requires Location permission in order to scan for Bluetooth Low Energy devices.</string>
+    <string name="location_permission_action">Grant permission</string>
+    <string name="location_permission_settings">Settings</string>
+
+    <string name="bluetooth_disabled_title">BLUETOOTH DISABLED</string>
+    <string name="bluetooth_disabled_info">The Bluetooth adapter is turned off. Click the button below to enable Bluetooth.</string>
+    <string name="bluetooth_disabled_action">Enable</string>
+
+    <string name="blinky_guide_title">LOCATION DISABLED</string>
+    <string name="blinky_guide_location_info">Please turn ON Location in order to use this app. Click the button below to enable Location.</string>
+    <string name="blinky_guide_location_action">Enable</string>
+
+    <string name="blinky_guide_title_no_device">NO DEVICE DETECTED</string>
+    <string name="blinky_guide_info_no_device">1. Make sure Mockup is well pluged into power supply.
+        \n2. Make sure Mockup is not connected to another device.
+        \n3. Make sure Bluetooth and Location parameters are enabled.
+        \n4. Make sure Location permission is granted.
+        \n4. Please DO NOT change Bluetooth parameters. The app will automatically connect if Location and Bluetooth are enabled.</string>
+
+    <string name="state_scanning">Scanning…</string>
+    <string name="state_connecting">Connecting…</string>
+    <string name="state_discovering_services">Discovering services…</string>
+    <string name="state_initializing">Initializing…</string>
+    <string name="state_discovering_services_completed">%s ready</string>
+    <string name="state_not_supported">Device does not have required services.</string>
+    <string name="state_disconnected">Device disconnected</string>
+</resources>
