@@ -115,7 +115,7 @@ public class BlinkyViewModel extends AndroidViewModel implements BlinkyManagerCa
 	}
 
 	@Override
-	protected void onCleared() {
+	public void onCleared() {
 		super.onCleared();
 		if (mBlinkyManager.isConnected()) {
 			disconnect();
