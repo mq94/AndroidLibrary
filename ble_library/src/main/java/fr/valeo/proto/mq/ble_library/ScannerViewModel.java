@@ -103,7 +103,7 @@ public class ScannerViewModel extends AndroidViewModel {
 		final ParcelUuid uuid = new ParcelUuid(BlinkyManager.LBS_UUID_SERVICE);
 		final List<ScanFilter> filters = new ArrayList<>();
 //		filters.add(new ScanFilter.Builder().setServiceUuid(uuid).build());
-		filters.add(new ScanFilter.Builder().setDeviceName("RFQ_PSA_P6x").build());
+		filters.add(new ScanFilter.Builder().setDeviceName("BLANK_PROJECT").build());
 
 		final BluetoothLeScannerCompat scanner = BluetoothLeScannerCompat.getScanner();
 		scanner.startScan(filters, settings, scanCallback);

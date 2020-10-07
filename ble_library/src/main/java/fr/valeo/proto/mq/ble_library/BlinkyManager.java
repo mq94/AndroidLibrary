@@ -149,11 +149,11 @@ public class BlinkyManager extends BleManager<BlinkyManagerCallbacks> {
 			command[i] = (byte) buffer[j];
 		}
 
-		// Log
-		Log.d(MainActivity.TAG, "SEND TO BLE -- total data " + total_data);
-		for (int i=2 ; i<total_data ; i++) {
-			Log.d(MainActivity.TAG, "SEND TO BLE -- " + command[i]);
-		}
+//		// Log
+//		Log.d(MainActivity.TAG, "SEND TO BLE -- total data " + total_data);
+//		for (int i=2 ; i<total_data ; i++) {
+//			Log.d(MainActivity.TAG, "SEND TO BLE -- " + command[i]);
+//		}
 
 		// Send
 		writeCharacteristic(mBufferCharacteristic, command);
