@@ -62,7 +62,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline17"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
-        app:srcCompat="@drawable/logo_valeo" />
+        app:srcCompat="@drawable/ic_valeo" />
 
     <TextView
         android:id="@+id/tv_connexion"
