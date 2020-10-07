@@ -54,6 +54,7 @@ public class ScannerViewModel extends AndroidViewModel {
 
 	/** MutableLiveData containing the scanner state to notify MainActivity. */
 	private final ScannerLiveData mScannerLiveData;
+	private String name = "BLANK_PROJECT";
 
 	public ScannerLiveData getScannerState() {
 		return mScannerLiveData;
@@ -103,7 +104,7 @@ public class ScannerViewModel extends AndroidViewModel {
 		final ParcelUuid uuid = new ParcelUuid(BlinkyManager.LBS_UUID_SERVICE);
 		final List<ScanFilter> filters = new ArrayList<>();
 //		filters.add(new ScanFilter.Builder().setServiceUuid(uuid).build());
-		filters.add(new ScanFilter.Builder().setDeviceName("BLANK_PROJECT").build());
+		filters.add(new ScanFilter.Builder().setDeviceName(get_ble_name()).build());
 
 		final BluetoothLeScannerCompat scanner = BluetoothLeScannerCompat.getScanner();
 		scanner.startScan(filters, settings, scanCallback);
@@ -185,4 +186,14 @@ public class ScannerViewModel extends AndroidViewModel {
 			}
 		}
 	};
+
+	public void set_ble_name(String str)
+	{
+		name = str;
+	}
+
+	public String get_ble_name()
+	{
+		return name;
+	}
 }

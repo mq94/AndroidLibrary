@@ -4,8 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import fr.valeo.proto.mq.ble_library.Test;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -13,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Test test = new Test();
+        ble_lib test = new ble_lib();
         test.toast_test(getApplicationContext());
     }
 }
