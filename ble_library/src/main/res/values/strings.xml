@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RFQ PSA P6x</string>
+    <string name="app_name">AndroidLibrary</string>
     <string name="unknown_device">Unknown Device</string>
 
     <string name="location_permission_title">LOCATION PERMISSION REQUIRED</string>

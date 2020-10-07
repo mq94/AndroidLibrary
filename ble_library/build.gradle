@@ -24,4 +24,15 @@ android {
 }
 
 dependencies {
+    // Lifecycle extensions
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+    // Butter Knife
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+    // Brings the new BluetoothLeScanner API to older platforms
+    implementation 'no.nordicsemi.android.support.v18:scanner:1.1.0'
+    // Log Bluetooth LE events in nRF Logger
+    implementation 'no.nordicsemi.android:log:2.1.1'
+    // BLE library
+    implementation 'no.nordicsemi.android:ble:1.2.0'
 }
